@@ -465,7 +465,7 @@ img {
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-bottom: var(--mb-2);
 }
 .qualification__button {
@@ -474,7 +474,7 @@ img {
   cursor: pointer;
 }
 .qualification__button:hover {
-  color: var(--first-color);
+  color: var(--first-color-alt);
 }
 .qualification__icon {
   font-size: 1.8rem;
@@ -497,6 +497,29 @@ img {
 .qualification__calendar {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
+}
+.qualification__rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+.qualification__line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
+}
+.qualification [data-content] {
+  display: none;
+}
+.qualification__active[data-content] {
+  display: block;
+}
+.qualification__button.qualification__active {
+  color: var(--first-color-alt);
 }
 /*==================== SERVICES ====================*/
 
