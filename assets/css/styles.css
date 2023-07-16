@@ -321,6 +321,18 @@ img {
   display: inline-flex;
   align-items: center;
 }
+.button--small {
+  padding: 0.75rem 1rem;
+}
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+.button--link:hover {
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
 /*==================== ABOUT ====================*/
 .about__img {
   width: 200px;
@@ -522,7 +534,36 @@ img {
   color: var(--first-color-alt);
 }
 /*==================== SERVICES ====================*/
-
+.services__container {
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.services__content {
+  position: relative;
+  background-color: var(--container-color);
+  box-shadow: 0px 2px 4px var(--first-color); /*rgba(0,0,0,.15)*/
+  padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  border-radius: 0.3rem;
+  transition: 0.3s;
+}
+.services__content:hover {
+  box-shadow: 0px 4px 8px var(--first-color);
+}
+.services__icon {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+.services__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-medium);
+}
+.services__button {
+  cursor: pointer;
+  font-size: var(--small-font-size);
+}
 /* Active Modal */
 
 /*==================== PORTFOLIO ====================*/
