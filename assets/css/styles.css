@@ -613,7 +613,7 @@ img {
   margin-right: var(--mb-0-25);
 }
 /* Active Modal */
-.active-modal{
+.active-modal {
   opacity: 1;
   visibility: visible;
 }
