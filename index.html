@@ -10,7 +10,10 @@
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="assets/css/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.css"
+    />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -732,10 +735,10 @@
         <h2 class="section__title">Portfolio</h2>
         <span class="section__subtitle">Most recent work</span>
 
-        <div class="portfolio__container container">
-          <div>
+        <div class="portfolio__container container swiper mySwiper">
+          <div class="swiper-wrapper">
             <!--==================== PORTFOLIO 1 ====================-->
-            <div class="portfolio__content grid">
+            <div class="portfolio__content grid swiper-slide">
               <img
                 src="assets/img/portfolio1.jpg"
                 alt=""
@@ -758,7 +761,7 @@
             </div>
 
             <!--==================== PORTFOLIO 2 ====================-->
-            <div class="portfolio__content grid">
+            <div class="portfolio__content grid swiper-slide">
               <img
                 src="assets/img/portfolio2.jpg"
                 alt=""
@@ -781,7 +784,7 @@
             </div>
 
             <!--==================== PORTFOLIO 3 ====================-->
-            <div class="portfolio__content grid">
+            <div class="portfolio__content grid swiper-slide">
               <img
                 src="assets/img/portfolio3.jpg"
                 alt=""
@@ -803,6 +806,9 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
@@ -822,8 +828,7 @@
     <!--==================== SCROLL TOP ====================-->
 
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
-
+    <script src="assets/js/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.js"></script>
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
   </body>
