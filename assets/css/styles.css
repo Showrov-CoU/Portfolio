@@ -654,10 +654,21 @@ img {
 .swiper-button-next {
   right: -0.5rem;
 }
-/* .swiper-pagination-bullet {
-
+/* .swiper-pagination-horizontal > .swiper-pagination-bullet {
+  bottom: 0.5rem;
 } */
-
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -2.5rem;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color-alt);
+}
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination-bullet {
+  outline: none;
+}
 /*==================== PROJECT IN MIND ====================*/
 
 /*==================== TESTIMONIAL ====================*/
