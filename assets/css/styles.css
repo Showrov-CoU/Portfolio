@@ -728,6 +728,9 @@ img {
 .testimonial__icon-star {
   color: var(--first-color);
 }
+.mySwiper .swiper-pagination-testimonial {
+  bottom: 0;
+}
 /*==================== CONTACT ME ====================*/
 
 /*==================== FOOTER ====================*/
