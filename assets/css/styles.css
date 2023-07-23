@@ -232,9 +232,13 @@ img {
   bottom: 0;
 }
 /* Active link */
-
+.active-link {
+  color: var(--first-color);
+}
 /* Change background header */
-
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.25);
+}
 /*==================== HOME ====================*/
 .home__container {
   gap: 1rem;
@@ -548,13 +552,13 @@ img {
 .services__content {
   position: relative;
   background-color: var(--container-color);
-  box-shadow: 0px 2px 4px var(--first-color); /*rgba(0,0,0,.15)*/
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); /*rgba(0,0,0,.15)*/
   padding: 3.5rem 0.5rem 1.25rem 1.5rem;
   border-radius: 0.3rem;
   transition: 0.3s;
 }
 .services__content:hover {
-  box-shadow: 0px 4px 8px var(--first-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.35);
 }
 .services__icon {
   display: block;
@@ -794,17 +798,17 @@ img {
   flex-direction: column;
   row-gap: 1.5rem;
 }
-.footer__link:hover{
+.footer__link:hover {
   color: var(--first-color-lighter);
 }
-.footer__social{
+.footer__social {
   font-size: 1.25rem;
   margin-right: var(--mb-1-5);
 }
-.footer__social:hover{
+.footer__social:hover {
   color: var(--first-color-lighter);
 }
-.footer__copy{
+.footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
   color: var(--text-color-light);
@@ -813,7 +817,7 @@ img {
 .footer__title,
 .footer__subtitle,
 .footer__link,
-.footer__social{
+.footer__social {
   color: #fff;
 }
 /*========== SCROLL UP ==========*/
