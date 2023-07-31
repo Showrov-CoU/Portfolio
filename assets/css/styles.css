@@ -840,7 +840,9 @@ img {
   color: #fff;
 }
 /* Show scroll */
-
+.show-scroll{
+  bottom: 5rem;
+}
 /*========== SCROLL BAR ==========*/
 
 /*==================== MEDIA QUERIES ====================*/
