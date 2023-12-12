@@ -1036,7 +1036,7 @@
             action="https://formspree.io/f/xbjvnbov"
             method="POST"
             id="contactForm"
-            onsubmit="handleFormSubmission"
+            //onsubmit="handleFormSubmission(this)"
             class="contact__form grid"
           >
             <div class="contact__inputs grid">
@@ -1077,15 +1077,10 @@
               ></textarea>
             </div>
             <div>
-              <a
-                type="submit"
-                style="border: none"
-                href="#"
-                class="button button--flex"
-              >
+              <button type="submit" style="border: none" class="button button--flex">
                 Send Message
                 <i class="uil uil-message button__icon"></i>
-              </a>
+              </button>
             </div>
           </form>
         </div>
