@@ -207,8 +207,9 @@ img {
 
 .nav__logo,
 .nav__toggle {
-  color: var(--title-color);
-  font-weight: var(--font-medium);
+  color: var(--first-color-alt);
+  font-size: 20px;
+  font-weight: var(--font-semi-bold);
 }
 
 .nav__logo:hover {

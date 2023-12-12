@@ -15,6 +15,12 @@
       href="assets/css/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.css"
     />
 
+    <!--==================== Toast ====================-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
@@ -910,14 +916,14 @@
               <div class="testimonial__data">
                 <div class="testimonial__header">
                   <img
-                    src="assets/img/profile.png"
+                    src="assets/img/r1.jpg"
                     alt=""
                     class="testimonial__img"
                   />
 
                   <div>
-                    <h3 class="testimonial__name">xyz</h3>
-                    <span class="tetimonial__person">CEO,abc</span>
+                    <h3 class="testimonial__name">Mahmudul Hasan</h3>
+                    <span class="tetimonial__person">Chairman,Dept of CSE</span>
                   </div>
                 </div>
                 <div>
@@ -939,14 +945,15 @@
               <div class="testimonial__data">
                 <div class="testimonial__header">
                   <img
-                    src="assets/img/profile.png"
+                    src="assets/img/r2.jpg"
                     alt=""
                     class="testimonial__img"
                   />
 
                   <div>
-                    <h3 class="testimonial__name">xyz</h3>
-                    <span class="tetimonial__person">CEO,abc</span>
+                    <h3 class="testimonial__name">Yasir Nabil</h3>
+                    <span class="tetimonial__person">Software Engineer</span>
+                    <!-- <span class="tetimonial__person">VivaSoft</span> -->
                   </div>
                 </div>
                 <div>
@@ -1025,33 +1032,57 @@
               </div>
             </div>
           </div>
-          <form action="" class="contact__form grid">
+          <form
+            action="https://formspree.io/f/xbjvnbov"
+            method="POST"
+            id="contactForm"
+            onsubmit="handleFormSubmission"
+            class="contact__form grid"
+          >
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input" />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  class="contact__input"
+                />
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">Email</label>
-                <input type="email" class="contact__input" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  class="contact__input"
+                />
               </div>
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">Project</label>
-              <input type="text" class="contact__input" />
+              <label for="" class="contact__label">Project (Optional)</label>
+              <input type="text" id="project" class="contact__input" />
             </div>
             <div class="contact__content">
               <label for="" class="contact__label">Message</label>
               <textarea
-                name=""
-                id=""
+                required
+                name="message"
+                id="message"
                 cols="0"
                 rows="7"
                 class="contact__input"
               ></textarea>
             </div>
             <div>
-              <a href="#" class="button button--flex">
+              <a
+                type="submit"
+                style="border: none"
+                href="#"
+                class="button button--flex"
+              >
                 Send Message
                 <i class="uil uil-message button__icon"></i>
               </a>
@@ -1128,7 +1159,13 @@
     </a>
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.js"></script>
+
+    <!--==================== Toast JS ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+
+    <!-- <script src="app.js"></script> -->
   </body>
 </html>

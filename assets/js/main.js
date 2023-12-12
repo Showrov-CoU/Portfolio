@@ -193,3 +193,30 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*==================== Form ====================*/
+// function handleFormSubmission() {
+//   // console.log(form);
+//   form.addEventListener("submit", function (e) {
+//     e.preventDefault();
+
+//     // Form validation (you can enhance this)
+//     let name = document.getElementById("name").value;
+//     let email = document.getElementById("email").value;
+//     let message = document.getElementById("message").value;
+
+//     console.log(name, email, message);
+//     // if (!name || !email || !message) {
+//     //   alert('Please fill in all fields');
+//     //   return;
+//     // }
+
+//     // Formspree will handle the submission and redirect to a success page
+//     // You can also add `enctype="multipart/form-data"` if your form includes file uploads
+
+//     // Optionally, clear the form
+//     form.reset();
+//   });
+// }
+
+// You can include the Toastify initialization here if needed
